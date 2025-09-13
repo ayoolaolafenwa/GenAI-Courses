@@ -1,1 +1,1 @@
-# LLM_handbook
+# GenAI_handbook
