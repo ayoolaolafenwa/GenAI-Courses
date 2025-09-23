@@ -1,4 +1,5 @@
 AI Agent and Large Language Model (LLM)
+![agent_cover](images/Agents/agentcover.png)
 
 Large Large Model is an advanced AI model built on deep neural networks like transformers and has been trained on vast amount of text to generate human-like text. LLMs like ChatGPT, Claude, Gemini, Grok are capable of solving a lot of challenging problems and are used in different fields such as science, health, eduction, finance to tackle challenging problems. AI agent  is used to extend the functionalities of LLMs to solve tasks that are beyond their pre-trained knowledge.  An LLM can easily solve a task like write a tutorial on Python using its pretrained knowledge, but when you asked to do something like book a flight for me. This is beyond its pre-trained knowledge and it needs to be able to access your calendar and do web search to book a flight for you. This is where agent comes in it is used to connect an LLM to an external tool to perform actions. Some of the common actions include:
 
@@ -14,7 +15,7 @@ AI agent is a system that uses a Large Language Model to plan, reason and take s
 
 Basic Structure of an AI Agent
 
-![img1](images/Agent.png)
+![agent](images/Agents/agent.png)
 
 Large Language Model(LLM)
 
@@ -26,7 +27,7 @@ Tool is the framework that the agent uses to perform an action based on the step
 
 Illustrated Decision Making of a Booking AI Agent
 
-![img2](images/reserve.png)
+![booking](images/Agents/booking.png)
 
 AI agents can have access to different tools depending on the type of task. The tool can be a data store like a database such as a customer support agent that have access to customer’s account details, purchase history from which it can decide to extract information from whenever it want to assist a customer on a problem. 
 
@@ -42,14 +43,14 @@ Act: The agent performs an action(uses a tool) based on the reasoning of the Lar
 
 Observation: The LLM observes the result of the action taken.
 
-![img3](images/TAO.png)
+![tao](images/TAO.png)
 
 
 The Thought Act Observation is a cycle of the LLM thinking of what do deciding the action/tool to be used by agent, the agent using the tool and taking the necessary action, LLM observes the output of the action if it is success or failure, think again and the agent takes the next action. Thought Act Observation is a repeated cycle that keeps going till a problem is solved.  It is analogous to a human thinking process when we are given a problem, we first think about how to solve the problem, take action on our thoughts we observe and observe the results of the action if it solves the problem, making necessary adjustments based on the results of our actions.  The steps taken during Thought Act Observation cycle depends on the complexity of the work at hand, the more complex, the more the steps. For better understanding of the Thought Act Observation Cycle we shall use a customer support agent that is built to solve user’s billing issues. 
 
 Problem: A customer opened a ticket saying, ‘I was billed twice for my subscription.
 
-![img4](images/cycle.png)
+![cycle](images/cycle.png)
 
 There are 9 steps taken by the Billing agent to resolve the user’s billing issues. The breakdown of the details of the tabular diagram below;
 
