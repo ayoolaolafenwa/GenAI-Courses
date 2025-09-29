@@ -32,7 +32,6 @@ In this course, I will build an Agentic RAG system using function calling. The A
 
 #### Prerequisite
 [Create an OpenAI Account](https://auth.openai.com/create-account) if you don’t have one and [Generate an API Key](https://platform.openai.com/api-keys) .
-![openai](images/openai.png)
 
 ###### Set up and Activate Environment 
 
@@ -50,7 +49,6 @@ export OPENAI_API_KEY=Your Openai API Key
 ##### Setup Tavily for Web Search 
 
 Tavily is a specialized web-search tool for AI agents. Create an account on Tavily.com, once your profile is set up, an API key will be generated that you can copy into your environment. New account receives 1000 free credits that can be used for up to 1000 web searches. 
-![tavily](images/tavily.png)
 ```
 export TAVILY_API_KEY=Your Tavily API Key
 ```

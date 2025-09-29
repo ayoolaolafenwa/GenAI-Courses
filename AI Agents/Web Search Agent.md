@@ -16,8 +16,7 @@ In this tutorial will demonstrate how to use function calling to build a simple 
 * Define custom instructions that guide the large language model  in determining when to call the web search function based on the query. For example, if the query asks about the current weather, the web search agent will recognize the need to search the internet to get the latest weather reports. However, if the query asks it to write a tutorial about a programming language like Python, something it can answer from its pre-trained knowledge it will not call the web search function and will respond directly instead.
 
 #### Prerequisite
-[Create an OpenAI Account](https://auth.openai.com/create-account) if you don’t have one and [Generate an API Key](https://platform.openai.com/api-keys) .
-![openai](images/openai.png)
+[Create an OpenAI Account](https://auth.openai.com/create-account) if you don’t have one and [Generate an API Key](https://platform.openai.com/api-keys).
 
 ###### Set up and Activate Environment 
 
@@ -35,7 +34,6 @@ export OPENAI_API_KEY=Your Openai API Key
 ##### Setup Tavily for Web Search 
 
 Tavily is a specialized web-search tool for AI agents. Create an account on Tavily.com, once your profile is set up, an API key will be generated that you can copy into your environment. New account receives 1000 free credits that can be used for up to 1000 web searches. 
-![tavily](images/tavily.png)
 ```
 export TAVILY_API_KEY=Your Tavily API Key
 ```
