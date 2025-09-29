@@ -315,7 +315,7 @@ This returned output will serve as relevant context for the web search agent: wh
 
 The tool schema defines custom instructions for an AI model on when it should call a tool. In this case, there are two tools: one for retrieving information from a document and another for performing a web search. The schema also specifies the conditions and actions to be taken when the model calls a tool.A json tool schema is defined below based on the [OpenAI tool schema structure](https://platform.openai.com/docs/guides/structured-outputs?context=with_parse#supported-schemas).
 
-``` json
+```
 tool_schemas = [
    {
         "type": "function",
