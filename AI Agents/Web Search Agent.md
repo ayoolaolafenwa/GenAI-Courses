@@ -1,5 +1,5 @@
 # Building A Web Search Agent using Function Calling and GPT-5
-![agentcover](images/Agents/agentcover.png)
+![agentcover](images/agentcover.png)
 ### Function Calling 
 Function calling a technique for connecting a large language model (LLM) to external tools such as APIs or databases. It is used in creating AI agents to connect LLMs to tools. In function calling, each tool is defined as a code function (for example, a weather API to fetch the latest forecast) along with a JSON Schema that specifies the function’s parameters and instructs the LLM on when and how to call the function for a given task.
 
@@ -8,7 +8,7 @@ The type of function defined depends on the task the agent is designed to perfor
 In this tutorial will demonstrate how to use function calling to build a simple web search agent using GPT-5 as the large language model.
 
 ### Basic Structure of Web Search Agent
-![functioncall](images/Agents/functioncall.png)
+![functioncall](images/functioncall.png)
 #### The main logic behind the web search agent:
 
 * Define a code function to handle the web search.
@@ -16,7 +16,8 @@ In this tutorial will demonstrate how to use function calling to build a simple 
 * Define custom instructions that guide the large language model  in determining when to call the web search function based on the query. For example, if the query asks about the current weather, the web search agent will recognize the need to search the internet to get the latest weather reports. However, if the query asks it to write a tutorial about a programming language like Python, something it can answer from its pre-trained knowledge it will not call the web search function and will respond directly instead.
 
 #### Prerequisite
-Create an OpenAI Account if you don’t have one and Generate an API Key 
+[Create an OpenAI Account](https://auth.openai.com/create-account) if you don’t have one and [Generate an API Key](https://platform.openai.com/api-keys) .
+![openai](images/openai.png)
 
 ###### Set up and Activate Environment 
 
@@ -34,6 +35,7 @@ export OPENAI_API_KEY=Your Openai API Key
 ##### Setup Tavily for Web Search 
 
 Tavily is a specialized web-search tool for AI agents. Create an account on Tavily.com, once your profile is set up, an API key will be generated that you can copy into your environment. New account receives 1000 free credits that can be used for up to 1000 web searches. 
+![tavily](images/tavily.png)
 ```
 export TAVILY_API_KEY=Your Tavily API Key
 ```
@@ -330,5 +332,31 @@ Process the model’s response output and do the following;
 
 * If the output type is a function call, obtain the function’s name, parse its arguments, and pass them to the function (web_search) to generate a response. In this case, the web search response contains up-to-date information relevant to the user’s message.  Finally appends the function call’s response and function call id to  tool_results. This lets the next loop send the tool result back to the model.
 
-This is the [notebook](web_search_agent.ipynb) for the full code of the Web Search Agent. 
+When you run the code, you can easily chat with the agent to ask questions that require the latest information, such as the current weather or the latest product releases. The agent responds with up-to-date information along with the corresponding sources from the internet.
+
+#### Below is a sample output from the terminal.
+
+```
+User: What is the weather like in London today?
+Assistant:  Reasoning ....
+Assistant:  Reasoning ....
+Assistant:  Right now in London: overcast, about 18°C (64°F), humidity ~88%, light SW wind ~16 km/h, no precipitation reported. Source: WeatherAPI (current conditions) — https://www.weatherapi.com/
+
+User: What is the latest iPhone model?
+Assistant:  Reasoning ....
+Assistant:  Reasoning ....
+Assistant:  The latest iPhone models are the iPhone 17 lineup (including iPhone 17, iPhone 17 Pro, iPhone 17 Pro Max) and the new iPhone Air — announced by Apple on Sept 9, 2025. Source: Apple Newsroom — https://www.apple.com/newsroom/2025/09/apple-debuts-iphone-17/
+
+User: Multiply 500 by 12.           
+Assistant:  Reasoning ....
+Assistant:  6000
+User: exit   
+Exiting chat. Goodbye!
+```
+You can see the results with their corresponding web sources. When you ask it to perform a task that doesn’t require up-to-date information, such as maths calculations or writing code the agent responds directly without any web search.
+
+##### Note: The web search agent is a simple, single-tool agent. Advanced agentic systems orchestrate multiple specialized tools and use efficient memory to maintain context, plan, and solve more complex tasks.
+
+
+This is the [notebook](Notebooks/web_search_agent.ipynb) for the full code of the Web Search Agent. 
 

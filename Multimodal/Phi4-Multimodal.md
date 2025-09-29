@@ -1,5 +1,5 @@
 # Review of Phi-4 Multimodal
-![phi4](images/Multimodal/Phi-4.png)
+![phi4](images/Phi-4.png)
 Phi-4-Multimodal is a 5.6-billion-parameter multimodal model built upon the Phi-4-Mini language model- a 3.8 billion parameters. It supports multiple modalities: text, image and audio inputs.
 
 For vision-related tasks, Phi-4-Multimodal was trained on high-quality multimodal instruction datasets covering tasks like general image understanding, OCR (Optical Character Recognition), chart interpretation, diagram comprehension, and video summarization.
@@ -154,7 +154,7 @@ def process_image(prompt, image_path):
 * The generated output is post-processed to extract the response, which is then returned.
 
 ##### Sample Image
-![bird](images/Multimodal/Bird.png)
+![bird](images/Bird.png)
 
 ```python
 image_path = "https://cdn.pixabay.com/photo/2015/11/29/13/08/kingfisher-1068684_1280.jpg"
@@ -172,7 +172,7 @@ the splashing water.
 ```
 
 ##### Sample Image2
-![photography](images/Multimodal/Photographer.png)
+![photography](images/Photographer.png)
 
 ``` python
 image_path = "https://cdn.pixabay.com/photo/2016/11/29/04/54/photographer-1867417_1280.jpg"

@@ -3,20 +3,20 @@ AI agent is a system that uses a Large Language Model to plan, reason and take s
 
 
 ###### Basic Structure of an AI Agent
-![agent](images/Agents/agent.png)
+![agent](images/agent.png)
 * Large Language Model(LLM): LLM is the brain of an AI agent. It takes a user’s prompt, plans and reasons through the request and breaks the problem into steps that determine which tools it should use to complete the task.
 
 * Tool: is the framework that the agent uses to perform an action based on the plan and reasoning from the Large Language Model.  If you ask an LLM to book a table for you at a restaurant, possible tools that will be used include calendar to check your availability and a web search tool to access the restaurant website and make a reservation for you. 
 
 #### Ilustrated Decision Making of a Booking AI Agent
-![booking](images/Agents/booking.png)
+![booking](images/booking.png)
 *AI agents can access different tools depending on the task. A tool might be a data store, such as a database. For example, a customer-support agent could access a customer’s account details and purchase history and decide when to retrieve that information to help resolve an issue.*
 
 
 ### Working Mechanism of an AI Agent (Thought Act Observation)
 
 The decision making process of an AI Agent follows an approach known as Thought Act Observation.
-![TAO](images/Agents/TAO.png)
+![TAO](images/TAO.png)
 
 * Thought: Large Language Model reasons and plans on what actions or steps to be taken based on the prompt such as the tools to be used.
 
@@ -29,7 +29,7 @@ The Thought Act Observation is a cycle of the LLM thinking of what do deciding t
 ##### Thought Act Observation Cycle of a customer support agent that is built to solve a user’s billing issue.
 
 *Problem: A customer opened a ticket saying, ‘I was billed twice for my subscription.*
-![cycle](images/Agents/cycle.png)
+![cycle](images/cycle.png)
 
 There are 9 steps taken by the Billing agent to resolve the user’s billing issues. The breakdown of the details of the tabular diagram below;
 

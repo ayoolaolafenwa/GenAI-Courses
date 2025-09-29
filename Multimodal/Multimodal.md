@@ -1,11 +1,11 @@
 # How Multimodal Large Language Model Works
-![multimodalai](images/Multimodal/multimodalai.png)
+![multimodalai](images/multimodalai.png)
 Multimodal LLM is an advanced large language model (LLM) designed to process and interpret various modalities such as text, images, and audio. It is used for tasks that go beyond text processing, such as answering questions based on documents, analyzing speech inputs, and describing image contents. Popular multimodal models include GPT-4 Vision, Gemini, Phi-4 Multimodal, and LLaMA Vision.
 
 ### Working of A Basic Multimodal Model
 Most multimodal models operate in the following manner: there is a base language model, such as GPT, which processes text and integrates other modalities through the interaction of an encoder, an adapter, and language integration mechanisms. A multimodal model that handles text and images typically works as follows:
 
-![multimodal](images/Multimodal/Mutimodal.png)
+![multimodal](images/Mutimodal.png)
 
 * Image Encoder: It is a deep neural network responsible for converting raw images into high-dimensional feature vectors known as image embeddings. These embeddings contains extracted information from the image. Some of the commonly used image encoders in multimodal models are CLIP, SigLIP.
 
