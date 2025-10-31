@@ -1,0 +1,8 @@
+openai
+tavily-python
+qdrant-client
+spacy
+langchain
+langchain-community
+langchain-text-splitters
+pypdf
