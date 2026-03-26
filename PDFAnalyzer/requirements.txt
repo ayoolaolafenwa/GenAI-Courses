@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+openai
+python-dotenv
+qdrant-client
+langchain-community
+langchain-text-splitters
+langchain-openai
+pypdf
+tiktoken
+python-multipart
+gradio
+requests
